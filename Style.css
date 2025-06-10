@@ -1,0 +1,134 @@
+body {
+  font-family: 'Cairo', sans-serif;
+  background: linear-gradient(to bottom, #ffffff, #fefae0);
+  color: #5c4400;
+  margin: 0;
+  padding: 0;
+  direction: rtl;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  padding: 10px 20px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.logo {
+  width: 60px;
+  filter: drop-shadow(0 0 4px gold);
+}
+
+.container {
+  background: white;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 90%;
+  max-width: 400px;
+  margin: auto;
+  margin-top: 20px;
+  animation: fadeIn 1s ease;
+}
+
+input[type="date"] {
+  padding: 12px;
+  font-size: 16px;
+  width: 100%;
+  border: 2px solid #d4af37;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  transition: 0.3s;
+}
+
+input[type="date"]:focus {
+  border-color: #b08d00;
+  outline: none;
+}
+
+button {
+  background-color: #d4af37;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 18px;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #b08d00;
+  transform: scale(1.05);
+}
+
+#result, #eligibility {
+  margin-top: 20px;
+  font-size: 20px;
+  color: #333;
+  opacity: 0;
+  transition: opacity 0.8s ease;
+}
+
+#result.show, #eligibility.show {
+  opacity: 1;
+}
+
+footer {
+  text-align: center;
+  padding: 15px;
+  font-size: 14px;
+  color: #777;
+  margin-top: auto;
+}
+
+@keyframes fadeIn {
+  from {opacity: 0; transform: translateY(20px);}
+  to {opacity: 1; transform: translateY(0);}
+}
+.age-line {
+  font-size: 22px;
+  margin-bottom: 15px;
+  background: #fff8e1;
+  padding: 10px;
+  border: 1px solid #d4af37;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(212, 175, 55, 0.3);
+}
+header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: white;
+  border-bottom: 2px solid #d4af37;
+}
+
+.logo {
+  height: 80px;
+  width: auto;
+}
+header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: white;
+  border-bottom: 2px solid #d4af37;
+  gap: 15px; /* مسافة بين اللوجو والنص */
+}
+
+.logo {
+  height: 80px;
+  width: auto;
+}
+
+.title {
+  font-size: 28px;
+  color: #d4af37; /* ذهبي */
+  font-weight: bold;
+  font-family: 'Cairo', sans-serif;
+}
